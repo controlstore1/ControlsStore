@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="ar">
+<center>
+<head>
+ <title>mintahi wedside</title>
+ <meta name="viewport" content="width=<device-width, initial-scale=1">
+<center><img src="hm.png" width=350px height=200px></center>
+<button class="home" ><a class="op" href="#h" >رشق</a></button>
+<button class="home"><a class="op" href="#tt" >العاب</a></button>
+<button class="b"><a class="op" href="#lele" > أرقام </a></button>
+<button class="b"><a class="op" href="#tools" > ادوات </a></button>
+</head>
+ <meta charset="utf-8">
+</center>
+<body>
+<style>
+body {
+background-image :url(hu.jpg);
+}
+
+.b {
+position: relative;
+display: inline-block;
+margin: 15px;
+padding: 12px 20px;
+text-align: center;
+font-size: 8px;
+letter-spacing: 1px;
+text-decoration: none;
+color: #725AC1;
+background: transparent;
+cursor: pointer;
+transition: ease-out 0.5s;
+border: 2px solid #725AC1;
+border-radius: 10px;
+box-shadow: inset 0 0 0 0 #725AC1;
+} 
+
+.b:hover {
+color: white;
+box-shadow: inset 0 -100px 0 0 #725AC1;
+} 
+
+.b:active{
+ transform: scale(0.9);
+} 
+
+.op {
+text-decoration:none ;
+color :white ;
+} 
+
+.home {
+  position: relative;
+  display: inline-block;
+  margin: 15px;
+  padding: 10px 18px;
+  text-align: center;
+  font-size: 8px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #725AC1;
+  background: transparent;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  border: 2px solid #725AC1;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0 #725AC1;
+}
+
+.home:hover {
+  color: white;
+  box-shadow: inset 0 -100px 0 0 #725AC1;
+}
+
+.home:active {
+  transform: scale(0.9);
+}
+
+div {
+border :6px solid #725AC1 ;
+transition-duration: .2s;
+
+} 
+
+.button {
+  width: 140px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0px 15px;
+  background-color: red;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  position: relative;
+  cursor: pointer;
+  font-weight: 900;
+  transition-duration: .2s;
+  background: linear-gradient(0deg, #000, #272727);
+}
+
+.button:before, .button:after {
+  content: '';
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  border-radius: 10px;
+  background: linear-gradient(45deg, #fb0094, #0000ff, #725AC1,#ffff00);
+  background-size: 400%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: -1;
+  animation: steam 20s linear infinite;
+}
+
+@keyframes steam {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 400% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button:after {
+  filter: blur(30px);
+}
+
+
+
+p{
+color :white ;
+}
+
+
+.gf{
+text-align :left ;
+border :6px solid #725AC1 ;
+padding :10px ;
+
+}
+
+
+td {
+margin :10px ;
+padding :10px ;
+} 
+
+.moon {
+border :2px solid  ;
+
+} 
+
+.pg {
+direction :rtl ;
+text-align :left ;
+font-size :20px ;
+} 
+
+
+button {
+color :white ;
+background-color : black;
+border :2px solid blue ;
+} 
+
+:hover:body {
+background-color: black;
+
+} 
+
+a {
+text-decoration : none;
+background-color :none ;
+
+}
+
+/* === removing default button style ===*/
+.bu {
+  margin: 0;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;
+}
+
+/* button styling */
+.bu {
+  --border-right: 6px;
+  --text-stroke-color: rgba(255,255,255,0.6);
+  --animation-color: #725AC1;
+  --fs-size: 2em;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: "Arial";
+  position: relative;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+/* this is the text, when you hover on button */
+.hover-text {
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px var(--animation-color);
+}
+/* hover */
+.bu:hover .hover-text {
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color))
+}
+
+
+
+#h{
+border :none ;
+}
+
+.hc {
+padding :70px 20px  20px 20px ;
+
+} 
+
+
+.is{
+border :none ;
+
+} 
+
+.bu {
+  margin: 0;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;
+}
+
+/* button styling */
+.is {
+  --border-right: 6px;
+  --text-stroke-color: #3ae57f;
+  --animation-color: #3ae57f ;
+
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: "Arial";
+  position: relative;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+/* this is the text, when you hover on button */
+.hover-text {
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px var(--animation-color);
+}
+/* hover */
+.is:hover .hover-text {
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color))
+}
+
+.into {
+border-radius :30px ;
+
+
+
+} 
+
+
+
+
+</style>
+<center>
+<br>
+<br>
+<br>
+<br>
+<br>
+<center>
+<br>
+<br>
+<div  id="h">
+<button data-text="Awesome" class="bu">
+    <span class="actual-text">&nbsp;Contrul&nbsp;</span>
+    <span class="hover-text" aria-hidden="true">&nbsp;Contrul&nbsp;</span>
+</button>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br><br>
+<label style="color :white ;">رشق</label>
+<center>
+<div>
+<br>
+<a href=""><img src="jk.jpg" width=100px height=100px></a>
+<p style="color:white ;">Fallow Instagram</p><br>
+<pre style="color :white ;" class="card-text">
+1k-2$   10k-9$
+
+20k-17$
+       
+30k-25$
+       
+40k-35$
+       
+50k-45$
+       
+100k-80$
+ </pre>
+ <br>
+<a href="https://t.me/S_A_s4"><button class="button"> للشراء </button></a>
+<br><br>
+</div>
+<br>
+<br>
+<br>
+<br>
+<label id="tt" style="color :white ;">شحن كافة الألعاب </label>
+<div class="gf">
+<center>
+</center>
+<center>
+<br>
+<br>
+<div class="is">
+<button data-text="Awesome" class="bu">
+    <span class="actual-text">&nbsp;Contrul&nbsp;</span>
+    <span class="hover-text" aria-hidden="true">&nbsp;Contrul&nbsp;</span>
+</button>
+</div>
+<br>
+<table>
+  <tr>
+    <td><img class="moon" src="pub.jpg"width=100px height=100px alt="je"></td>&nbsp;
+   <td class="pg" style="color :white ;">  ببجي موبايل PUBG MOBILE  </td>
+<br>  
+  </tr>
+</table>
+<center>
+<table>
+  <tr>
+    <td><img class="moon" src="main.jpg"width=100px height=100px alt="je"></td>&nbsp;
+   <td class="gc" style="color :white ;"> ماين كرافت Maincraft </td>
+<br>  
+  </tr>
+</table>
+<table>
+  <tr>
+    <td><img class="moon" src="free.jpg"width=100px height=100px alt="je"></td>&nbsp;
+   <td class="pg" style="color :white ;"> فري فاير | Free Fire </td>
+<br>  
+  </tr>
+</table>
+<table>
+  <tr>
+    <td><img class="moon" src="legend.jpg"width=100px height=100px alt="je"></td>&nbsp;
+   <td class="pg" style="color :white ;"> لجينت موبايل Legend Mobile  </td>
+<br>  
+  </tr>
+</table>
+<table>
+  <tr>
+    <td><img class="moon" src="call.jpg"width=100px height=100px alt="je"></td>&nbsp;
+   <td class="pg" style="color :white ;">  كول اوف ديوتي Call of Duty   </td>
+<br>  
+  </tr>
+</table>
+<table>
+  <tr>
+    <td><img class="moon" src="rob.jpg"width=100px height=100px alt="je"></td>&nbsp;
+   <td class="pg" style="color :white ;">   روبلوكس | Roblox  </td>
+<br>  
+  </tr>
+</table>
+<table>
+  <tr>
+    <td><img class="moon" src="lo.jpg"width=100px height=100px alt="je"></td>&nbsp;
+   <td class="pg" style="color :white ;">   يلا لودو | Lodoo           </td>
+<br>  
+  </tr>
+</table>
+<br>
+<br>
+<a href="https://t.me/S_A_s4" ><button class="button"> للشراء </button></a>
+</a>
+<br><br>
+</div>
+<br>
+<br>
+<br>
+<div id="lele">
+<br>
+<img src="tele.png" width=120px height=120px>
+<p>
+الارقام 
+</p>
+<p dir="rtl"> أرقام لاتيفيا لتفعيل التليجرام الرقم الواحد بسعر 0.5$</p>
+<br>
+<p dir="rtl" >2 أرقام مصرية لتفعيل التليجرام بسعر 2$</p>
+<br>
+<p dir="rtl">موقع ارقام وهمية لاتيفي لتفعيل جميع مواقع التواصل مع طريقة استعماله 5$</p>
+<br>
+<a href="httos://t.me/S_A_s4" ><button class="button"> للشراء </button></a>
+<br><br>
+</div>
+<br><br>
+<div>
+<br>
+<img src="tools.jpg" width=100px height=100px>
+<p id="tools">ادوات</p>
+<br>
+<br>
+<p>ادوات اختراق فيس بوك بالتخمين ومندون حظر</p><br>
+<p>موقع اختراق فيس بوك بواسطة الصفحات المزورة </p><br>
+<p>  ادوات اختراق الكميرات من التيرمكس</p><br>
+<p>اداة تحضير لستات لاختراق صفحات الفيس بوك بواسطة اداة التخمين</p><br>
+<div class="into">
+<p> اداة مسح ملفات </p>
+<p> برنامج مسح ملفات  </p>
+<p> اداة ملغمة لأختراق الفيسبوك</p>
+<br>
+<p></p>
+<a href="httos://t.me/S_A_s4" ><button class="button"> للشراء </button></a>
+<br>
+</div>
+
+<br>
+<h5 style="color :white ;">@S_A_s4</h5>
+</div> 
+<h5></h5>
+</body>
+</html>
+</DOCTYPE>
